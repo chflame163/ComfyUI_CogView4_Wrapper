@@ -1,0 +1,15 @@
+[project]
+name = "cogview4_wrapper"
+description = "The unofficial implementation of CogView4 project in ComfyUI."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["numpy<2.0", "pillow", "torch", "huggingface_hub", "git+https://github.com/huggingface/diffusers.git"]
+
+[project.urls]
+Repository = "https://github.com/chflame163/ComfyUI_CogView4_Wrapper"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_CogView4_Wrapper"
+Icon = ""
