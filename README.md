@@ -15,7 +15,9 @@ Install dependency packages：
 pip install -r ComfyUI_CogView4_Wrapper/requirements.txt
 ```
 
-The model will be automatically downloaded to the ```ComfyUI/models/CogView``` directory during the first run.
+The model will be automatically downloaded to the ```ComfyUI/models/CogView``` directory during the first run.    
+
+You can also manually download the model from [huggingface.co/THUDM/CogView4-6B](https://huggingface.co/THUDM/CogView4-6B/tree/main) to the above directory.
 
 ## Note
 ComfyUI_CgView4-Wrapper requires the installation of the diffusers dependency package in dev version, which may affect certain plugins. Please be aware of backing up the environment.
