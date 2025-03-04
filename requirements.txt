@@ -1,0 +1,5 @@
+numpy<2.0
+pillow
+torch
+huggingface_hub
+git+https://github.com/huggingface/diffusers.git
