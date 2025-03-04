@@ -39,8 +39,8 @@ class CogView4_Wrapper:
                 "guidance_scale": ("FLOAT", {"default": 5, "min": 0.1, "max": 100, "step": 0.1}),
                 "batch_size": ("INT", {"default": 1, "min": 1, "max": 100, "step": 1}),
                 "steps": ("INT", {"default": 30, "min": 1, "max": 100, "step": 1}),
-                "width": ("INT", {"default": 1024, "min": 8, "max": 4096, "step": 16}),
-                "height": ("INT", {"default": 1024, "min": 8, "max": 4096, "step": 16}),
+                "width": ("INT", {"default": 1024, "min": 16, "max": 4096, "step": 16}),
+                "height": ("INT", {"default": 1024, "min": 16, "max": 4096, "step": 16}),
                 "cache_model": ("BOOLEAN", {"default": True,}),
             },
             "optional": {
