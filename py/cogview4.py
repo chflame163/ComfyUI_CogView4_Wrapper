@@ -61,11 +61,11 @@ class CogView4_Wrapper:
         if self.dtype != dtype or self.model_name != model:
             model_path = check_and_download_model(model, f"THUDM/{model}")
             if dtype == 'bf16':
-                self.pipe = CogView4Pipeline.from_pretrained(model_path, torch_dtype=torch.bfloat16).to("cuda")
+                self.pipe = CogView4Pipeline.from_pretrained(model_path, torch_dtype=torch.bfloat16)
                 self.model_name = model
                 self.dtype = dtype
             else:
-                self.pipe = CogView4Pipeline.from_pretrained(model_path, torch_dtype=torch.float32).to("cuda")
+                self.pipe = CogView4Pipeline.from_pretrained(model_path, torch_dtype=torch.float32)
                 self.model_name = model
                 self.dtype = dtype
             # Open it for reduce GPU memory usage
